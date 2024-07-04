@@ -11,9 +11,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 					title: "SECOND",
 					background: "white",
 					initial: "white"
-				}
-			]
-		},
+				},
+				// todos: [user.name, user.name, user.name] 
+
+		
+		]},
 		actions: {
 			// Use getActions to call a function within a fuction
 			exampleFunction: () => {
@@ -33,7 +35,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const demo = store.demo.map((elm, i) => {
 					if (i === index) elm.background = color;
 					return elm;
+
+
 				});
+				//add to contact list
+				addtodo: () => {
+						
+				}
 
 				//reset the global store
 				setStore({ demo: demo });

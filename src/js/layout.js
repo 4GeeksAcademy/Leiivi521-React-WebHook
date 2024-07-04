@@ -27,11 +27,20 @@ const Layout = () => {
 						<Route path="/single/:theid" element={<Single />} />
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
+					{/* <contactlist />
+					<Routes>
+						<Route path="/list" element={<contactlist />} />
+					</Routes> */}
 					<Footer />
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>
+		
 	);
+		
 };
+<div> 
+		<p>If you can see this it working</p>
+		</div>
 
 export default injectContext(Layout);
