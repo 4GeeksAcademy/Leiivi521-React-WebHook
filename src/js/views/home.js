@@ -1,14 +1,16 @@
 import React from "react";
-import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
-import Contactlist from "../component/contactlist"
-import { Addcontact } from "../component/AddContact";
+import { Addcontact } from "./AddContact";
 
 export const Home = () => (
 	<div>
-		<h1>Contact List</h1>
-		<Addcontact />
+		<h1>Welcome To Your Contact List!</h1> 
 		{/* <Contactlist /> */}
+		<Addcontact />
+		
+		
+		
 
 	</div>
+
 );
